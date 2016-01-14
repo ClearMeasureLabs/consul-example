@@ -7,6 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service1", "Service1\Servic
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{00590295-791E-4953-9DE8-EFD3CB6E5AEB}"
 	ProjectSection(SolutionItems) = preProject
+		build.cmd = build.cmd
+		build.fsx = build.fsx
+		paket.dependencies = paket.dependencies
 		README.md = README.md
 	EndProjectSection
 EndProject

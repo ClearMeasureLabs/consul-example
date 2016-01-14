@@ -27,3 +27,4 @@ settings.local.config
 node_modules/
 npm-debug.log
 .vs/
+.fake/
