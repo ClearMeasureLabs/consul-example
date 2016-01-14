@@ -2,3 +2,4 @@ source https://nuget.org/api/v2
 
 nuget fake
 nuget microphone.webapi
+nuget restsharp

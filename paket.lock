@@ -22,4 +22,5 @@ NUGET
       Microsoft.Bcl (>= 1.1.10)
       Microsoft.Bcl.Build (>= 1.0.14)
     Newtonsoft.Json (8.0.2)
+    RestSharp (105.2.3)
     Serilog (1.5.14)

@@ -54,7 +54,7 @@ Target "Demo" (fun _ ->
     printfn "Remember to close each service before building again!"
 )
 
-"Demo"
-  ==> "Build"
+"Build"
+  ==> "Demo"
 
 RunTargetOrDefault "Build"
