@@ -29,3 +29,4 @@ npm-debug.log
 .vs/
 .fake/
 output/
+.paket/paket.exe
