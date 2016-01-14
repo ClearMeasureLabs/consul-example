@@ -19,6 +19,7 @@ The first step is to setup a _Consul_ server and a _Consul_ agent having two ser
 
 ### Demo steps
 
+NOTE: The demo was tested with the Mac OS as host and a Virtual Box Windows 7 VM to run the agent. However it should work for other hosts as well.
 #### Host
 
 1. Install consul and then run
@@ -29,7 +30,7 @@ The first step is to setup a _Consul_ server and a _Consul_ agent having two ser
 
 1. Install consul and run
 
-    `consul agent -host agent -data-dir YOUR_DATA_DIR`
+    `consul agent -host agent -data-dir YOUR_DATA_DIR -advertise AGENT_IP`
 
 2. Check members (only one should appear)
 
