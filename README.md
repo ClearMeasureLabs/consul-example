@@ -3,9 +3,10 @@
 To setup an example of using [Consul](https://www.consul.io) as a service discovery solution for a micro service architecture.
 
 [Demo1 - Using consul on host and consul on agent](#demo1)
-[Demo2 - Using consul with docker and consul on agent](#demo2)
 
-## Demo I
+[Demo2 - Using consul with Docker and consul on agent](#demo2)
+
+## Demo I<a name="demo1"></a>
 
 The first step is to setup a _Consul_ server and a _Consul_ agent having two services that register and then talk to each other.
 
@@ -90,7 +91,7 @@ The browser should show something like this:
     Service 1 at http://YOUR_HOST_NAME:SERVICE1_PORT returns OK with "Service1 PING! 14/01/2016 9:12:13 AM"
 
 
-# Demo II
+# Demo II <a name="demo2"></a>
 This demo will run consul using Docker image `gliderlabs/docker-server`.
 
 ### Summary architecture
