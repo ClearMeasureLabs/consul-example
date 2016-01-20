@@ -108,7 +108,7 @@ NOTE: I had to change the Virtual Box VM to run in NAT mode
 
 ### Demo steps
 
-1. Clone repository git@github.com:ClearMeasureLabs/consul-with-docker.git
+1. Clone sample [repository](https://github.com/ClearMeasureLabs/consul-with-docker)
 2. Install [Vagrant](https://www.vagrantup.com/)
 3. On the cloned repository run `vagrant up`
 4. Connect to vagrant image `vagrant ssh node-1`
