@@ -2,6 +2,9 @@
 
 To setup an example of using [Consul](https://www.consul.io) as a service discovery solution for a micro service architecture.
 
+[Demo1 - Using consul on host and consul on agent](#demo1)
+[Demo2 - Using consul with docker and consul on agent](#demo2)
+
 ## Demo I
 
 The first step is to setup a _Consul_ server and a _Consul_ agent having two services that register and then talk to each other.
@@ -85,3 +88,36 @@ This service is using _Consul_ to get the service 1 information and call `ping`.
 The browser should show something like this:
 
     Service 1 at http://YOUR_HOST_NAME:SERVICE1_PORT returns OK with "Service1 PING! 14/01/2016 9:12:13 AM"
+
+
+# Demo II
+This demo will run consul using Docker image `gliderlabs/docker-server`.
+
+### Summary architecture
+
+#### Host
+* Consul server: running on Ubuntu Vagrant image
+
+#### Client (same windows machine as demo I)
+* Consul agent: agent that the services use to connect to the server
+* Service1: Service that provides information
+* Service2: Service that consumes service 1
+
+NOTE: I had to change the Virtual Box VM to run in NAT mode
+
+### Demo steps
+
+1. Clone repository git@github.com:ClearMeasureLabs/consul-with-docker.git
+2. Install [Vagrant](https://www.vagrantup.com/)
+3. On the cloned repository run `vagrant up`
+4. Connect to vagrant image `vagrant ssh node-1`
+5. Run consul `/vagrant/run.sh`
+
+6. For the agent use the same steps as "Demo I" but use the IP of the vagrant image instead.
+
+
+### Testing the services
+
+You can test the same services as before plus you can run the consol ui on the server.
+
+For example assuming the IP running consul is `192.168.33.11` you can see the UI at `192.168.33.11:8500/ui`.
